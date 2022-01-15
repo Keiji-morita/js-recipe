@@ -28,18 +28,16 @@ fizzbuzz(30)
 //発展 ★★ - ３が大好き
 const lovethree = function (num3) {
   for (let g = 1; g <= num3; g++) {
-   for(let h = 3; h <= num3; h = h + 10){
-    if (g % 10 === 3) {
-      console.log(g +"!!!!!")
-    } else if(g / h === 10){
-      console.log(g + "!!!!!")
-    } else {
-      console.log(g)
+    for (let h = 3; h <= num3; h = h + 10) {
+      if (g % 10 === 3) {
+        console.log(g + "!!!!!")
+      } else if (g / h === 10) {
+        console.log(g + "!!!!!")
+      } else {
+        console.log(g)
+      }
     }
   }
- }
 }
 
- lovethree(400)
-
-
+lovethree(400)
