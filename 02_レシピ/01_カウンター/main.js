@@ -8,3 +8,5 @@ plusButton.onclick = function () {
 
   display.textContent = count
 }
+
+//発展 ★ - 便利なボタン
