@@ -27,9 +27,9 @@ const quiz = {
 }
 
 // quiz を画面に表示する関数
-const reloadQuiz = function () {
+const reloadQuiz = function() {
   // 問題文を表示
-  quizText.textContent = "Q. " + quiz.text
+  quizText.textContent = " " + quiz.text
 
   // 画像を表示
   quizImage.src = "./images/" + quiz.image
@@ -41,20 +41,20 @@ const reloadQuiz = function () {
 }
 
 // choiceNumber番目の選択肢を選択
-const choose = function (choiceNumber) {
+const choose = function(choiceNumber) {
   // フィードバックを表示
   feedback.textContent = quiz.choices[choiceNumber].feedback
 }
 
-choice1.onclick = function () {
+choice1.onclick = function() {
   // 0 番目の選択肢を選択
   choose(0)
 }
-choice2.onclick = function () {
+choice2.onclick = function() {
   // 1 番目の選択肢を選択
   choose(1)
 }
-choice3.onclick = function () {
+choice3.onclick = function() {
   // 2 番目の選択肢を選択
   choose(2)
 }
