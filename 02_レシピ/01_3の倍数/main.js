@@ -13,10 +13,12 @@ genkifunction(100)
 //発展 ★ - FizzBuzz
 const fizzbuzz = function (numF) {
   for (let n = 1; n <= numF; n++) {
-    if (n % 3 === 0) {
-      console.log("Fizz")
+    if (n % 15 === 0) {
+      console.log("FizzBuzz")
     } else if (n % 5 === 0) {
       console.log("Buzz")
+    } else if (n % 3 === 0) {
+      console.log("Fizz")
     } else {
       console.log(n)
     }
@@ -40,4 +42,6 @@ const lovethree = function (num3) {
   }
 }
 
-lovethree(400)
+lovethree(200)
+
+//if (n % 15 === 0){ console.log(n + "Buzz")
