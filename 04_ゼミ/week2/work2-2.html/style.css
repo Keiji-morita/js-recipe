@@ -24,17 +24,21 @@
 }
 
 .about__wrapper {
-  background-color: #f2f7f5;
+  background-color: #00473e;
+  border: solid #f2f7f5;
 }
 
 .about__wrapper__title {
+  padding-top: 50px;
   font-size: 40px;
+  color: #f2f7f5;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .about__wrapper__text {
+  color: #f2f7f5;
   margin: 5rem;
   padding-bottom: 4rem;
 }
