@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="" />
+  </head>
+  <body>
+    <section id="shutunyuukin">
+      <h1>入力画面</h1>
+      <input v-model="nyuryokugaku" v-model="delete" />
+
+      <div>入力金額 : {{ nyuryokugaku }}円</div>
+
+      <div>
+        <button v-on:click="nyukin">入金</button>
+        <button v-on:click="shukkin">出金</button>
+      </div>
+
+      <h2>口座残高</h2>
+
+      <div>残高 : {{ zandaka }}円</div>
+    
+      <h2>取引履歴</h2>
+      <ul id="array-with-index">
+        <li v-for="log in logs ">
+          日付:{{ log.date }},
+          操作:{{  log.type }},
+          金額:{{  log.money }}
+        </li>
+      </ul>
+    
+    </section>
+
+    <script src="https://unpkg.com/vue@next"></script>
+    <script src="main.js"></script>
+   </body>
+</html>
