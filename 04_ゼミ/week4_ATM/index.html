@@ -27,19 +27,17 @@
       <h2>口座残高</h2>
 
       <div>残高 : {{ zandaka }}円</div>
-    
+
       <h2>取引履歴</h2>
       <ul id="array-with-index">
         <li v-for="log in logs ">
-          日付:{{ log.date }},
-          操作:{{  log.type }},
-          金額:{{  log.money }}
+          日付:{{ log.date }}, 操作:{{ log.type }},<br />
+          金額:{{ log.money }}
         </li>
       </ul>
-    
     </section>
 
     <script src="https://unpkg.com/vue@next"></script>
     <script src="main.js"></script>
-   </body>
+  </body>
 </html>
